@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "trying to update system"
+sleep 2.5
+sudo apt-get update
+sudo apt-get upgrade -y -force-yes
+sudo apt-get distupgrade -y
+sudo apt-get autoclean
+sleep 1
+echo
+echo "system is up to date"
+echo
